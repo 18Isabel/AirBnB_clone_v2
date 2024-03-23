@@ -1,195 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>AirBnB clone</title>
-
-		<link rel="shortcut icon" href="images/icon.ico" >
-
-		<link rel="stylesheet" href="styles/4-common.css"/>
-		<link rel="stylesheet" href="styles/3-header.css"/>
-		<link rel="stylesheet" href="styles/3-footer.css"/>
-		<link rel="stylesheet" href="styles/6-filters.css"/>
-		<link rel="stylesheet" href="styles/100-places.css"/>
-	</head>
-    <body>
-		<header>
-			<div id="header_logo"></div>
-		</header>
-		<div class="container">
-			<section class="filters">
-				<button>Search</button>
-				<div class="locations">
-					<h3>States</h3>
-					<h4>California, Arizona...</h4>
-					<ul class="popover">
-						<li><h2>Arizona</h2>
-							<ul>
-								<li><h4>Page</h4></li>
-								<li><h4>Page2</h4></li>
-							</ul></li>
-						<li><h2>California</h2>
-							<ul>
-								<li><h4>San Francisco</h4></li>
-								<li><h4>Los Altos</h4></li>
-							</ul></li>
-					</ul>
-				</div>
-				<div class="filter_amenities">
-					<h3>Amenities</h3>
-					<h4>Internet, Kitchen...</h4>
-					<ul class="popover">
-						<li><h4>Internet</h4></li>
-						<li><h4>TV</h4></li>
-						<li><h4>Kitchen</h4></li>
-						<li><h4>Iron</h4></li>
-					</ul>
-				</div>
-
-			</section>
-			<section class="places">
-				<h1>Places</h1>
-				<article>
-					<div class="headline">
-						<h2 class="article_title">My home</h2>
-						<div class="price_by_night">$80</div>
-					</div>
-					<div class="information">
-						<div class="max_guest">
-							<div class="guest_icon"></div>
-							<p>2 Guests</p>
-						</div>
-						<div class="number_rooms">
-							<div class="bed_icon"></div>
-							<p>1 Bedroom</p>
-						</div>
-						 <div class="number_bathrooms">
-							<div class="bath_icon"></div>
-							<p>1 Bathroom</p>
-						</div>
-					</div>
-					<div class="user"><b>Owner</b>: John Lennon</div>
-					<div class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
-					<div class="amenities">
-						<h2 class="article_subtitle">Amenities</h2>
-						<ul>
-							<li><div class="tv_icon"></div>TV</li>
-							<li><div class="wifi_icon"></div>Wifi</li>
-							<li><div class="pet_icon"></div>Pet friendly</li>
-						</ul>
-					</div>
-					<div class="reviews">
-						<h2 class="article_subtitle">Reviews</h2>
-						<ul>
-							<li>
-								<div class="review_item">
-									<h3>From Bob Dylan the 27th January 2017</h3>
-									<p class="review_text">Wow, what can I say?! I'm a real rolling stone, you may have heard, but - by golly - I'd just as well settle down in this humble home, if you'd part with it - course, I'm sure you wouldn't. Real shame too. Oh well...</p>
-								</div>
-							</li>
-							<li>
-								<div class="review_item">
-									<h3>From Justin Majetich the 28th April 1991</h3>
-									<p class="review_text">I was birthed in this here bathtub today!</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<div class="headline">
-						<h2 class="article_title">Tiny house</h2>
-						<div class="price_by_night">$65</div>
-					</div>
-					<div class="information">
-                        <div class="max_guest">
-                            <div class="guest_icon"></div>
-                            <p>4 Guests</p>
-                        </div>
-                        <div class="number_rooms">
-                            <div class="bed_icon"></div>
-                            <p>2 Bedroom</p>
-                        </div>
-                         <div class="number_bathrooms">
-                            <div class="bath_icon"></div>
-                            <p>1 Bathroom</p>
-                        </div>
-                    </div>
-					<div class="user"><b>Owner</b>: Adrienne</div>
-					<div class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-					<div class="amenities">
-                        <h2 class="article_subtitle">Amenities</h2>
+<head>
+    <meta charset="UTF-8">
+    <title>alx-school</title>
+    <link rel="stylesheet" href="./styles/4-common.css">
+    <link rel="stylesheet" href="./styles/3-header.css">
+    <link rel="stylesheet" href="./styles/3-footer.css">
+    <link rel="stylesheet" href="./styles/101-places.css">
+    <link rel="stylesheet" href="./styles/6-filters.css">
+    <link rel="icon" href="./images/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <div class="container">
+        
+        <!-- filters section -->
+        
+        <section class="filters">
+            <div class="locations">
+                <div class="loc">
+                    <h3>States</h3>
+                    <h4>Benue, Lagos...</h4>
+                </div>
+                <ul class="popover">
+                    <li>
+                        <h2>Benue</h2>
                         <ul>
-                            <li><div class="tv_icon"></div>TV</li>
-                            <li><div class="wifi_icon"></div>Wifi</li>
+                            <li>Makurdi</li>
+                            <li>Gboko</li>
+                            <li>Otukpo</li>
                         </ul>
-                    </div>
-                    <div class="reviews">
-                        <h2 class="article_subtitle">Reviews</h2>
+                    </li>
+                    <li>
+                        <h2>Delta</h2>
                         <ul>
-                            <li>
-								<div class="review_item">
-                                	<h3>From Bilbo Baggins the 6th June 2089</h3>
-                                	<p class="review_text">The place was spotless, and Adrienne was an excellent host, leaving fresh biscuits out for my ravenous arrival.</p>
-								</div>
-                            </li>
+                            <li>Sapele</li>
+                            <li>Warri</li>
+                            <li>Asaba</li>
                         </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="amenities">
+                <div class="loc">
+                    <h3>Amenities</h3>
+                    <h4>electricity, internet...</h4>
+                </div>
+                 <ul class="popover">
+                    <li>Internet</li>
+                    <li>TV</li>
+                    <li>Electricity</li>
+                    <li>Toilets</li>
+                </ul>
+            </div>
+            <button>Search</button>
+        </section>
+        
+        <!-- places section -->
+        
+        <section class="places">
+            <h1>Places</h1>
+            <div class="art-wrap">
+            <article>
+                <h2>James' Home</h2>
+                <div class="price_by_night">
+                    <p>₦70</p>
+                </div>
+                <div class="information">
+                    <div class="max_guest">
+                        <img src="./images/icon_group.png" alt="">
+                        <p>2 guests</p>
                     </div>
-				</article>
-				<article>
-					<div class="headline">
-						<h2 class="article_title">A suite</h2>
-						<div class="price_by_night">$180</div>
-					</div>
-					<div class="information">
-                        <div class="max_guest">
-                            <div class="guest_icon"></div>
-                            <p>5 Guests</p>
-                        </div>
-                        <div class="number_rooms">
-                            <div class="bed_icon"></div>
-                            <p>3 Bedroom</p>
-                        </div>
-                         <div class="number_bathrooms">
-                            <div class="bath_icon"></div>
-                            <p>2 Bathroom</p>
-                        </div>
+                    <div class="number_rooms">
+                        <img src="./images/icon_bed.png" alt="">
+                        <p>2 beds</p>
                     </div>
-					<div class="user"><b>Owner</b>: Betty Holberton</div>
-					<div class="description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<div class="amenities">
-                        <h2 class="article_subtitle">Amenities</h2>
-                        <ul>
-                            <li><div class="pet_icon"></div>Pet friendly</li>
-                        </ul>
+                    <div class="number_bathrooms">
+                        <img src="./images/icon_bath.png" alt="">
+                        <p>4 bathrooms</p>
                     </div>
-                    <div class="reviews">
-                        <h2 class="article_subtitle">Reviews</h2>
-                        <ul>
-                            <li>
-								<div class="review_item">
-                                	<h3>From Beyonce Knowles the 16th September 2013</h3>
-                                	<p class="review_text">Betty was a sweetheart. Jay, I and the kids thoroughly enjoyed out stay.</p>
-								</div>
-                            </li>
-                            <li>
-								<div class="review_item">
-                                	<h3>From Julien Barbier the 1th August 2008</h3>
-                                	<p class="review_text">What a beautiful home! I had one of the best night's sleeps of my life and woke up with an idea!</p>
-								</div>
-                            </li>
-                        </ul>
+                </div>
+                <div class="user">
+                    <p><b>Owner:</b> Matthias, John</p>
+                </div>
+                <div class="description">
+                    <p>
+                        James' Home is a great place to hang around anytime. Be it vacation, holidays, James' Home is definitely the right place to be. We offer free internet services to our customers. At James' Home, 24/7 power supply is undisputable. Situated in a serene environment, the rooms and furniture are furnished with state of the art facilities. Contact us today for reservations and bookings.
+                    </p>
+                </div>
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>
+                                <img src="./images/icon_tv.png" alt=""> <p>TV</p>
+                        </li>
+                        <li>
+                                <img src="./images/icon_wifi.png" alt=""> <p>Wifi</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Matthias, Oduh the 30th June 2023</h3>
+                            <p>Such a nice place to be. Check it out guys</p>
+                        </li>
+                        <li>
+                            <h3>From Labidi, Tony the 25th December 2022</h3>
+                            <p>All my Christmas celebration was done there with my family. everything was just as itemized above. Thank you James' Home</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <h2>Yemi' lounge</h2>
+                  <div class="price_by_night">
+                    <p>₦67</p>
+                </div>
+                <div class="information">
+                    <div class="max_guest">
+                        <img src="./images/icon_group.png" alt="">
+                        <p>2 guests</p>
                     </div>
-				</article>
-			</section>
-		</div>
-		<footer>
-			<p>Holberton School</p>
-		</footer>
-	</body>
+                    <div class="number_rooms">
+                        <img src="./images/icon_bed.png" alt="">
+                        <p>2 beds</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <img src="./images/icon_bath.png" alt="">
+                        <p>4 bathrooms</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <p><b>Owner:</b> Andrew, John</p>
+                </div>
+                <div class="description">
+                    <p>
+                        Yemi's Lounge is a great place to hang around anytime. Be it vacation, holidays, Yemi's Lounge is definitely the right place to be. We offer free internet services to our customers. At Yemi's Lounge, 24/7 power supply is undisputable. Situated in a serene environment, the rooms and furniture are furnished with state of the art facilities. Contact us today for reservations and bookings.
+                    </p>
+                </div>
+                 <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>
+                                <img src="./images/icon_pets.png" alt=""> <p>Pets Friendly</p>
+                        </li>
+                        <li>
+                                <img src="./images/icon_wifi.png" alt=""> <p>Wifi</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Xavier, Hernandez the 15th August 2023</h3>
+                            <p>Hospitality was top-notch ?? Check it out guys</p>
+                        </li>
+                        <li>
+                            <h3>From Willie, McCarthy  the 1st March 2022</h3>
+                            <p>Everything was just as itemized above. Thank you Yemis' Home for the serenity, warmth and fun ??</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <h2>My Home</h2>
+                  <div class="price_by_night">
+                    <p>₦30</p>
+                </div>
+                <div class="information">
+                    <div class="max_guest">
+                        <img src="./images/icon_group.png" alt="">
+                        <p>2 guests</p>
+                    </div>
+                    <div class="number_rooms">
+                        <img src="./images/icon_bed.png" alt="">
+                        <p>2 beds</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <img src="./images/icon_bath.png" alt="">
+                        <p>4 bathrooms</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <p><b>Owner:</b> Albert, John</p>
+                </div>
+                <div class="description">
+                    <p>
+                        My Home is a great place to hang around anytime. Be it vacation, holidays, My Home is definitely the right place to be. We offer free internet services to our customers. At My Home, 24/7 power supply is guaranteed, Situated in a serene environment, the rooms and furniture are furnished with state of the art facilities. Contact us today for reservations and bookings.
+                    </p>
+                </div>
+                 <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>
+                                <img src="./images/icon_tv.png" alt=""> <p>TV</p>
+                        </li>
+                        <li>
+                                <img src="./images/icon_wifi.png" alt=""> <p>Wifi</p>
+                        </li>
+                        <li>
+                                <img src="./images/icon_pets.png" alt=""> <p>Pets Friendly</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Authur, Vincent the 5th May 2023</h3>
+                            <p>I felt nostalgic when I pondered on the warmth experience I had at My Home. It was all about the old song "oh my Home". Hope to see My Home soonest</p>
+                        </li>
+                        <li>
+                            <h3>From Ojochegbe, Blessing the 8th October 2022</h3>
+                            <p>Everything at My Home to me is just memorable. Such a nice place to go on honey moon. Really, really had fun with hubby!</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            </div>
+        </section>
+        
+    </div>
+    <footer>
+        <p>Best School</p>
+    </footer>
+    
+</body>
 </html>
